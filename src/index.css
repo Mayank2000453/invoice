@@ -1,13 +1,92 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mtop{
+  margin-top: 0;
+}
+.stype{
+  list-style-type: none;
+}
+/* .bstyle{
+  padding: 10px;
+  border: 1px solid black;
+} */
+.btype{
+  border: none transparent;
+  outline: none;
+}
+.bold{
+  font-weight: bold;
+}
+.fstyle{
+  display: flex;
+  flex-wrap: wrap;
+}
+.lstyle{
+display: flex;
+width: 50%;
+}
+.istyle{
+ width: 70%;
+}
+.tform{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+img{
+  /* height: 100px;
+  width: 250px; */
+}
+.card{
+  border: 2px solid black;
+  
+}
+.brder{
+ border-bottom: 2px black;
+}
+.wdth{
+  width: 100%;
+  height: 1px; border: none; color: #333; background-color: #333;
+  margin-bottom: 0px;
+}
+.width{
+  height: 100%;
+  width: 100%;
+}
+.divbrder{
+  border-top: 1px black;
+}
+.hbrder{
+  border-top: 1px black;
+}
+.tbrder{
+  border: none   !important;
+
+}
+.signature{
+  height:"300px";
+  width:"550px";
+  display: 'flex';
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+   margin:"0";
+    
+}
+.buttonCenter{
+  text-align: center;
+}
+.tocenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.t1{
+  color: black !important;
+  font-weight: 500;
 }
