@@ -1,6 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-export default function Table() {
+
+
+export default function Table({items,setItems}) {
+  const DownloadPdf = () => {
+    window.print();
+  }
+  
   return (
     <>
         <div className="col-12">
@@ -27,7 +33,7 @@ export default function Table() {
             <tbody>
             <tr>
                 <th scope="row">1</th>
-                    <td>Software</td>
+                    <td>{}</td>
                     <td>8023</td>
                     <td>5.00 pcs</td>
                     <td>250.00</td>
@@ -39,9 +45,31 @@ export default function Table() {
                     <td>625</td>
             </tr>
             </tbody>
+           
           </table>
         </div>
-
+        <div className='col-6'>
+            <p>Total in Words</p>
+            <ul className="stype"><li>Words answer</li></ul>
+            <p>Looking forward to bussiness</p>
+        </div>
+        <div className='col-6'>
+            <div className='col-12'>
+            <ul className="stype">
+          <li>Sub Total</li>
+          <li>CGST9 (9%)</li>
+          <li>SGST9 (9%)</li>
+         </ul>
+            </div>
+            <div className="col-12" style={{height:"300px",width:"550px",display: 'flex',
+flexDirection: 'column',
+justifyContent: 'flex-end',
+alignItems: 'center',
+margin:"0"}}>
+    <p>Authorized Signature</p>
+    </div>
+        </div>   
+        <button class="btn btn-primary" style={{marginLeft:"450px"}} onClick={DownloadPdf}>Print Pdf</button>
     </>
   )
 }

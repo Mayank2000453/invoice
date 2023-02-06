@@ -90,3 +90,7 @@ img{
   color: black !important;
   font-weight: 500;
 }
+.cur{
+  font-style: italic;
+  font-weight: bold;
+}
