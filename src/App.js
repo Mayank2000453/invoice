@@ -1,8 +1,4 @@
 import React, {useState}from 'react'
-import Header from './components/Header';
-import Address from './components/Address';
-import Table from './components/Table';
-import Bottom from './components/Bottom';
 import TableForm from './components/Tableform';
 
 const items = [
@@ -30,13 +26,13 @@ export default function App() {
 
 
   
-  const [company, setCompany] = useState("Amazon");
-  const [address, setAddress] = useState("Gokuldham Society");
-  const [town, setTown] = useState("Goregaon");
-  const [city, setCity] = useState("Mumbai");
-  const [pincode, setPincode] = useState("124032");
-  const [state, setState] = useState("Maharashtra");
-  const [gstin, setGSTIN] = useState("193ABFB6");
+  const [company, setCompany] = useState("");
+  const [address, setAddress] = useState("");
+  const [town, setTown] = useState("");
+  const [city, setCity] = useState("");
+  const [pincode, setPincode] = useState("");
+  const [state, setState] = useState("");
+  const [gstin, setGSTIN] = useState("");
 
   return (
     <>
